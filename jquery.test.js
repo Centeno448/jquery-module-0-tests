@@ -19,6 +19,6 @@ beforeAll(() => {
 it('index.js maneja el click en div id="button"', () => {
   var file = fs.readFileSync(path.resolve(__dirname, './index.js'), 'utf8');
   const regex =
-    /\$\('#button'\)\.click\((function)?[\s]*\(\)[\s]*(=>)?[\s]*{[\d\D\n]*}[\s\n]*\)/;
+    /\$\('#button'\)\.click\([\s]*(function)?[\s]*\(\)[\s]*(=>)?[\s]*{[\d\D\n]*}[\s\n]*\)/;
   expect(regex.test(file)).toBe(true);
 });

@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "serve",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "dependencies": {
+    "jquery": "^3.6.0",
     "regenerator-runtime": "^0.13.5"
   },
   "devDependencies": {

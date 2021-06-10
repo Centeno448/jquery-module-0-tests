@@ -1,8 +1,7 @@
-import './style.css';
-
+const $ = require('jquery');
 
 $(document).ready(
   $('#button').click(function() {
-    console.log('hello')
+    $('h2').text('asd')
   })
 );

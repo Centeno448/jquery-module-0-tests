@@ -4,7 +4,6 @@ import path from 'path';
 const $ = require('jquery');
 
 beforeAll(() => {
-  // Set up our document body
   document.body.innerHTML = `
     <div class="container">
       <h2>Bienvenido al curso de jQuery</h2>

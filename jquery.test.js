@@ -15,7 +15,7 @@ beforeAll(() => {
   require('./index');
 });
 
-it('index.js maneja el click en div id="button"', () => {
+it('index.js maneja el click en div id="button" | Asegúrate de manejar el click en div id="button"', () => {
   var file = fs.readFileSync(path.resolve(__dirname, './index.js'), 'utf8');
   const regex =
     /\$\('#button'\)\.click\([\s]*(function)?[\s]*\(\)[\s]*(=>)?[\s]*{[\d\D\n]*}[\s\n]*\)/;
